@@ -1,0 +1,61 @@
+title $程序$ $Program$
+frm_tm $[ZhangYH] 帧时间: $ $[ZhangYH] Frame Time: $
+bt_save $保存$ $Save$
+bt_load $载入$ $Load$
+fpn_global $全局$ $Global$
+compile $解释并运行$ $Interpret & Run$
+fpn_cmd $指令$ $Command$
+unnamed_par $未命名$ $Unnamed$
+bt_del_par $删除$ $Del.$
+bt_add_par $新建参数$ $Create Param.$
+fpn_par $参数$ $Parameters$
+fpn_lang $语言/Lang.$ $Language$
+fpn_about $关于$ $About$
+fpn_hit $对象$ $Objects$
+bt_del_hit $删除$ $Del.$
+bt_update_hit $确定$ $OK$
+bt_crt_hit $创建新对象$ $Create Object$
+cb_hit_sel $选定: $ $Sel.: $
+bt_output $输出$
+mute $静音$ $Mute$
+unmute $解除静音$ $Unmute$
+show $展示图片$ $Show Pic.$
+hide $隐藏图片$ $Hide Pic.$
+fast $模式: 实时$ $Mode: Fast$
+slow $模式: 离线$ $Mode: Slow$
+not_started $离线渲染未开启$ $Slow Mode Off$
+total_sample $总采样: $ $Total Sample: $
+bad_sample $%), 坏点: $ $%), Bad Sample: $
+bt_reset $重置$ $Reset$
+cb_hit_show $显示: $ $Show: $
+
+about_txt
+
+$这是一个简单光线追踪渲染器, 它可以渲染简单的 3D 模型, 支持哑光, 金属, 玻璃, 烟雾, 凝胶等材质, 支持光源, 支持纹理映射. 用户可以用脚本语言编辑场景, 并在实时模式下调整物体和摄像机的方位与朝向, 在准备就绪后用户可以开启离线模式进行长时间的渲染得到高画质的图像.
+
+用 [Ctrl+S] 显示和隐藏画面, 用 [Ctrl+G] 开启和关闭 Gamma 校正, 用 [Ctrl+B] 开启和关闭画面缩放, 用 [Ctrl+M] 开启或取消静音. 在实时模式下, 如果没有选定场景中的对象, 按住 [鼠标中键] 可以调整摄像机的角度, 按住 [鼠标右键] 可以调整摄像机的方位, 用 [鼠标滚轮] 可以缩放画面; 如果选定了场景中的对象, 则上述操作可能会有不同的效果.
+
+这个渲染器只支持格式为 ".3d" 的 3D 模型文件, 目前只有我制作的程序 "3D 模型编辑器" 能够生成这样的文件. 这个渲染器生成的图片也是独有的 ".tile" 的格式, 也只有我制作的程序支持这样的格式. 可以在我的 itch.io 主页上找到支持这些格式的程序.
+
+这个程序目前还没有一个完备的教程, 它的操作对用户来说也完全算不上友好, 事实上你很容易让这个程序卡死或者崩溃掉. 要了解如何使用这个程序, 可以在 "全局" 面板中加载程序自带的示例存档, 并在这些存档的基础上合理修改各项参数.
+
+我制作这个程序使用的教材是 "Ray Tracing in a Weekend" 系列, 你可以很容易在网上搜到这个教程. 我觉得这个系列不管是在光线追踪还是 c++ 编程方面都是非常优秀的教材.
+
+我写这个程序只是出于学习用途, 它目前还有很多缺陷: 在有光源的情形, 由于一些技术原因无法对凝胶状的材质进行重要性采样, 大大增加了其渲染时间; 这个渲染器只是一个 CPU 单线程的程序, 完全没有利用到 GPU; 由于实现较为麻烦, 目前还无法对非球形光源进行重要性采样; 为了使得音乐能在帧率突变时也能流畅运行, 这个程序的声音播放延迟较高, 执行的静音操作可能会在几秒钟后才有响应, 我还不知道怎么去改进这个问题. 
+
+如果你有建议或想要交流, 非常欢迎留下评论! 祝身体健康, 心情愉快! (2023/08/30)$
+
+$(Translated by ChatGPT) This is a straightforward ray tracing renderer capable of depicting simple 3D models. It supports a variety of materials such as matte, metal, glass, smoke, and gel, while also incorporating features like light sources and texture mapping. Users are empowered to script scenes, dynamically adjusting object and camera positions and orientations in real-time. Once primed, users can seamlessly transition to offline mode for prolonged rendering sessions, yielding images of exceptional quality.
+
+Employ [Ctrl+S] to toggle display visibility and [Ctrl+G] to enable or disable gamma correction. Similarly, [Ctrl+B] engages or disengages screen scaling, while [Ctrl+M] toggles mute status. In real-time mode, when no object within the scene is selected, pressing the [middle mouse button] facilitates camera angle adjustment, and the [right mouse button] alters camera orientation. Scroll the [mouse wheel] to zoom in or out. Upon selecting a scene object, the aforementioned actions might yield distinct outcomes.
+
+This renderer exclusively supports ".3d" format 3D model files, generated solely by the accompanying "3D Model Editor" program, a creation of my own. The resultant images, in the distinct ".tile" format, are also exclusive to my proprietary program. Software compatible with these formats can be located on my itch.io profile.
+
+At present, this program lacks a comprehensive tutorial and its user interface is far from intuitive; in fact, it's quite easy to encounter program freezes or crashes. To comprehend its operation, refer to the provided sample archives within the "Global" panel. Modify parameters rationally based on these archives.
+
+The creation of this program was inspired by the "Ray Tracing in a Weekend" series, easily searchable online. I find this series exceptionally instructive, be it in the realm of ray tracing or C++ programming.
+
+I developed this program purely for educational purposes. Presently, it possesses numerous shortcomings: when dealing with illuminated scenes, due to technical limitations, significant sampling issues arise with gel-like materials, considerably prolonging rendering times. The renderer remains single-threaded and CPU-bound, with no GPU utilization. Implementation complexities currently prevent importance sampling for non-spherical light sources. To ensure music playback consistency amidst fluctuating frame rates, the program employs a higher audio playback latency. Muting operations might take several seconds to respond, an issue I'm still working on improving.
+
+Should you have suggestions or seek to engage in discussions, your comments are most welcome! Wishing you good health and a joyful spirit! (2023/08/30)$
+

@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="framework">
+      <UniqueIdentifier>{22e8c6e4-5007-4cbc-a403-e1316ed27e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\basic">
+      <UniqueIdentifier>{d08d83ce-04f8-40ac-a1cb-6c6fa2e66b70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\draw">
+      <UniqueIdentifier>{5ddfa53b-c155-4399-b6da-8007637081ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\control">
+      <UniqueIdentifier>{e3739b4d-f523-4ede-9cbe-c847792a6be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\app">
+      <UniqueIdentifier>{ae1dc96e-f838-414a-b30f-0c959c44c8b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\parse">
+      <UniqueIdentifier>{4651eaf2-03ee-4982-866e-673a96e61e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\image">
+      <UniqueIdentifier>{bbaa05cb-33d7-473c-be25-a00f5540e832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="current">
+      <UniqueIdentifier>{e071e88c-03c3-42b2-a379-5556aba863e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="current\ui">
+      <UniqueIdentifier>{38c80e3a-b63b-4fd6-a108-12c280b25525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="current\general">
+      <UniqueIdentifier>{018a13d4-ecb4-4605-b87b-8caccd77e33c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="current\rt_common">
+      <UniqueIdentifier>{7a155596-9a28-4c04-bffe-d5bed8f8ed54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="current\material">
+      <UniqueIdentifier>{b60e0a43-304c-4ebf-808a-d860421d9ab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="current\hittable">
+      <UniqueIdentifier>{28fefcc2-328c-4a1e-959f-c6a9e43d751e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="current\texture">
+      <UniqueIdentifier>{354eb5c0-7eff-4f12-9b7a-1fb92e7b0672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="current\pdf">
+      <UniqueIdentifier>{62ed8ee1-755e-4213-ade5-95feca0031e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\music">
+      <UniqueIdentifier>{572a9a60-1a9a-41d2-b7be-72f56fcc47e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\music\common">
+      <UniqueIdentifier>{035d1492-246c-4e12-be0d-289a9c21a344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\music\inst">
+      <UniqueIdentifier>{c84e8eae-43b8-4aeb-80c4-2d2ea996cd03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\music\fx">
+      <UniqueIdentifier>{748e48e5-8be6-4b29-8f2b-2a238f615b33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="dvec.cpp">
+      <Filter>framework\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>framework\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="vec2.cpp">
+      <Filter>framework\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="vec3.cpp">
+      <Filter>framework\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_constant.cpp">
+      <Filter>framework\image</Filter>
+    </ClCompile>
+    <ClCompile Include="font.cpp">
+      <Filter>framework\image</Filter>
+    </ClCompile>
+    <ClCompile Include="tile.cpp">
+      <Filter>framework\image</Filter>
+    </ClCompile>
+    <ClCompile Include="app.cpp">
+      <Filter>framework\app</Filter>
+    </ClCompile>
+    <ClCompile Include="app_item.cpp">
+      <Filter>framework\app</Filter>
+    </ClCompile>
+    <ClCompile Include="app_msg.cpp">
+      <Filter>framework\app</Filter>
+    </ClCompile>
+    <ClCompile Include="app_wv.cpp">
+      <Filter>framework\app</Filter>
+    </ClCompile>
+    <ClCompile Include="expr.cpp">
+      <Filter>framework\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="bra.cpp">
+      <Filter>framework\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="proc.cpp">
+      <Filter>framework\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="token.cpp">
+      <Filter>framework\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="var.cpp">
+      <Filter>framework\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_str.cpp">
+      <Filter>framework\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_tile.cpp">
+      <Filter>framework\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_comp.cpp">
+      <Filter>framework\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_geo.cpp">
+      <Filter>framework\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_px_seg.cpp">
+      <Filter>framework\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="control.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl_list.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="label.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="rich_label.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="separator.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="button.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="checkbox.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="dragbar.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="droplist.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="float_panel.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="panel.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="rich_textbox.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="scrollbar.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="textbox.cpp">
+      <Filter>framework\control</Filter>
+    </ClCompile>
+    <ClCompile Include="fpn_about.cpp">
+      <Filter>current\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="fpn_cmd.cpp">
+      <Filter>current\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="fpn_global.cpp">
+      <Filter>current\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="fpn_lang.cpp">
+      <Filter>current\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="fpn_par.cpp">
+      <Filter>current\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="pn_bottom.cpp">
+      <Filter>current\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="pn_menu.cpp">
+      <Filter>current\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui.cpp">
+      <Filter>current\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="bgr.cpp">
+      <Filter>current\general</Filter>
+    </ClCompile>
+    <ClCompile Include="cur.cpp">
+      <Filter>current\general</Filter>
+    </ClCompile>
+    <ClCompile Include="par.cpp">
+      <Filter>current\general</Filter>
+    </ClCompile>
+    <ClCompile Include="ray.cpp">
+      <Filter>current\rt_common</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>framework\image</Filter>
+    </ClCompile>
+    <ClCompile Include="geo.cpp">
+      <Filter>framework\image</Filter>
+    </ClCompile>
+    <ClCompile Include="aabb.cpp">
+      <Filter>current\rt_common</Filter>
+    </ClCompile>
+    <ClCompile Include="matt.cpp">
+      <Filter>current\material</Filter>
+    </ClCompile>
+    <ClCompile Include="metal.cpp">
+      <Filter>current\material</Filter>
+    </ClCompile>
+    <ClCompile Include="refract.cpp">
+      <Filter>current\material</Filter>
+    </ClCompile>
+    <ClCompile Include="light.cpp">
+      <Filter>current\material</Filter>
+    </ClCompile>
+    <ClCompile Include="smoke.cpp">
+      <Filter>current\material</Filter>
+    </ClCompile>
+    <ClCompile Include="bvh_node.cpp">
+      <Filter>current\hittable</Filter>
+    </ClCompile>
+    <ClCompile Include="hit_list.cpp">
+      <Filter>current\hittable</Filter>
+    </ClCompile>
+    <ClCompile Include="medium.cpp">
+      <Filter>current\hittable</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_model.cpp">
+      <Filter>current\hittable</Filter>
+    </ClCompile>
+    <ClCompile Include="sphere.cpp">
+      <Filter>current\hittable</Filter>
+    </ClCompile>
+    <ClCompile Include="tri.cpp">
+      <Filter>current\hittable</Filter>
+    </ClCompile>
+    <ClCompile Include="checker.cpp">
+      <Filter>current\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="mix_pdf.cpp">
+      <Filter>current\pdf</Filter>
+    </ClCompile>
+    <ClCompile Include="pass.cpp">
+      <Filter>current\material</Filter>
+    </ClCompile>
+    <ClCompile Include="fpn_hit.cpp">
+      <Filter>current\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="hit_item.cpp">
+      <Filter>current\rt_common</Filter>
+    </ClCompile>
+    <ClCompile Include="mix.cpp">
+      <Filter>current\material</Filter>
+    </ClCompile>
+    <ClCompile Include="rotate.cpp">
+      <Filter>current\hittable</Filter>
+    </ClCompile>
+    <ClCompile Include="translate.cpp">
+      <Filter>current\hittable</Filter>
+    </ClCompile>
+    <ClCompile Include="nrect.cpp">
+      <Filter>framework\music\common</Filter>
+    </ClCompile>
+    <ClCompile Include="rhythm.cpp">
+      <Filter>framework\music\common</Filter>
+    </ClCompile>
+    <ClCompile Include="track.cpp">
+      <Filter>framework\music\common</Filter>
+    </ClCompile>
+    <ClCompile Include="rthm_num.cpp">
+      <Filter>framework\music\common</Filter>
+    </ClCompile>
+    <ClCompile Include="env.cpp">
+      <Filter>framework\music\inst</Filter>
+    </ClCompile>
+    <ClCompile Include="filter.cpp">
+      <Filter>framework\music\inst</Filter>
+    </ClCompile>
+    <ClCompile Include="inst.cpp">
+      <Filter>framework\music\inst</Filter>
+    </ClCompile>
+    <ClCompile Include="lfo.cpp">
+      <Filter>framework\music\inst</Filter>
+    </ClCompile>
+    <ClCompile Include="osc.cpp">
+      <Filter>framework\music\inst</Filter>
+    </ClCompile>
+    <ClCompile Include="fx.cpp">
+      <Filter>framework\music\fx</Filter>
+    </ClCompile>
+    <ClCompile Include="reverb.cpp">
+      <Filter>framework\music\fx</Filter>
+    </ClCompile>
+    <ClCompile Include="clip.cpp">
+      <Filter>framework\music\common</Filter>
+    </ClCompile>
+    <ClCompile Include="glass.cpp">
+      <Filter>current\material</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dvec.h">
+      <Filter>framework\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="include.h">
+      <Filter>framework\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>framework\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="vec2.h">
+      <Filter>framework\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="vec3.h">
+      <Filter>framework\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="vptr.h">
+      <Filter>framework\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <Filter>framework\image</Filter>
+    </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>framework\image</Filter>
+    </ClInclude>
+    <ClInclude Include="app.h">
+      <Filter>framework\app</Filter>
+    </ClInclude>
+    <ClInclude Include="app_item.h">
+      <Filter>framework\app</Filter>
+    </ClInclude>
+    <ClInclude Include="app_wv.h">
+      <Filter>framework\app</Filter>
+    </ClInclude>
+    <ClInclude Include="bra.h">
+      <Filter>framework\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="expr.h">
+      <Filter>framework\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="proc.h">
+      <Filter>framework\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="token.h">
+      <Filter>framework\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="var.h">
+      <Filter>framework\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_tile.h">
+      <Filter>framework\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_comp.h">
+      <Filter>framework\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_geo.h">
+      <Filter>framework\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_px_seg.h">
+      <Filter>framework\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_str.h">
+      <Filter>framework\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="control.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="button.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="checkbox.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl_def.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl_list.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="dragbar.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="droplist.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="float_panel.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="label.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="panel.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="rich_label.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="rich_textbox.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="scrollbar.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="separator.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="textbox.h">
+      <Filter>framework\control</Filter>
+    </ClInclude>
+    <ClInclude Include="fpn_about.h">
+      <Filter>current\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="fpn_cmd.h">
+      <Filter>current\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="fpn_global.h">
+      <Filter>current\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="fpn_lang.h">
+      <Filter>current\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="fpn_par.h">
+      <Filter>current\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="pn_bottom.h">
+      <Filter>current\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="pn_menu.h">
+      <Filter>current\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui.h">
+      <Filter>current\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="bgr.h">
+      <Filter>current\general</Filter>
+    </ClInclude>
+    <ClInclude Include="cur.h">
+      <Filter>current\general</Filter>
+    </ClInclude>
+    <ClInclude Include="my_def.h">
+      <Filter>current\general</Filter>
+    </ClInclude>
+    <ClInclude Include="par.h">
+      <Filter>current\general</Filter>
+    </ClInclude>
+    <ClInclude Include="ray.h">
+      <Filter>current\rt_common</Filter>
+    </ClInclude>
+    <ClInclude Include="helper.h">
+      <Filter>current\rt_common</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>framework\image</Filter>
+    </ClInclude>
+    <ClInclude Include="geo.h">
+      <Filter>framework\image</Filter>
+    </ClInclude>
+    <ClInclude Include="aabb.h">
+      <Filter>current\rt_common</Filter>
+    </ClInclude>
+    <ClInclude Include="material.h">
+      <Filter>current\material</Filter>
+    </ClInclude>
+    <ClInclude Include="matt.h">
+      <Filter>current\material</Filter>
+    </ClInclude>
+    <ClInclude Include="metal.h">
+      <Filter>current\material</Filter>
+    </ClInclude>
+    <ClInclude Include="refract.h">
+      <Filter>current\material</Filter>
+    </ClInclude>
+    <ClInclude Include="light.h">
+      <Filter>current\material</Filter>
+    </ClInclude>
+    <ClInclude Include="smoke.h">
+      <Filter>current\material</Filter>
+    </ClInclude>
+    <ClInclude Include="bvh_node.h">
+      <Filter>current\hittable</Filter>
+    </ClInclude>
+    <ClInclude Include="hit_list.h">
+      <Filter>current\hittable</Filter>
+    </ClInclude>
+    <ClInclude Include="hittable.h">
+      <Filter>current\hittable</Filter>
+    </ClInclude>
+    <ClInclude Include="medium.h">
+      <Filter>current\hittable</Filter>
+    </ClInclude>
+    <ClInclude Include="rt_model.h">
+      <Filter>current\hittable</Filter>
+    </ClInclude>
+    <ClInclude Include="sphere.h">
+      <Filter>current\hittable</Filter>
+    </ClInclude>
+    <ClInclude Include="tri.h">
+      <Filter>current\hittable</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>current\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="col.h">
+      <Filter>current\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="checker.h">
+      <Filter>current\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="image.h">
+      <Filter>current\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf.h">
+      <Filter>current\pdf</Filter>
+    </ClInclude>
+    <ClInclude Include="sphere_pdf.h">
+      <Filter>current\pdf</Filter>
+    </ClInclude>
+    <ClInclude Include="cos_pdf.h">
+      <Filter>current\pdf</Filter>
+    </ClInclude>
+    <ClInclude Include="hit_pdf.h">
+      <Filter>current\pdf</Filter>
+    </ClInclude>
+    <ClInclude Include="mix_pdf.h">
+      <Filter>current\pdf</Filter>
+    </ClInclude>
+    <ClInclude Include="pass.h">
+      <Filter>current\material</Filter>
+    </ClInclude>
+    <ClInclude Include="fpn_hit.h">
+      <Filter>current\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="hit_item.h">
+      <Filter>current\rt_common</Filter>
+    </ClInclude>
+    <ClInclude Include="mix.h">
+      <Filter>current\material</Filter>
+    </ClInclude>
+    <ClInclude Include="rotate.h">
+      <Filter>current\hittable</Filter>
+    </ClInclude>
+    <ClInclude Include="translate.h">
+      <Filter>current\hittable</Filter>
+    </ClInclude>
+    <ClInclude Include="nrect.h">
+      <Filter>framework\music\common</Filter>
+    </ClInclude>
+    <ClInclude Include="rhythm.h">
+      <Filter>framework\music\common</Filter>
+    </ClInclude>
+    <ClInclude Include="track.h">
+      <Filter>framework\music\common</Filter>
+    </ClInclude>
+    <ClInclude Include="rthm_num.h">
+      <Filter>framework\music\common</Filter>
+    </ClInclude>
+    <ClInclude Include="env.h">
+      <Filter>framework\music\inst</Filter>
+    </ClInclude>
+    <ClInclude Include="filter.h">
+      <Filter>framework\music\inst</Filter>
+    </ClInclude>
+    <ClInclude Include="lfo.h">
+      <Filter>framework\music\inst</Filter>
+    </ClInclude>
+    <ClInclude Include="osc.h">
+      <Filter>framework\music\inst</Filter>
+    </ClInclude>
+    <ClInclude Include="inst.h">
+      <Filter>framework\music\inst</Filter>
+    </ClInclude>
+    <ClInclude Include="fx.h">
+      <Filter>framework\music\fx</Filter>
+    </ClInclude>
+    <ClInclude Include="reverb.h">
+      <Filter>framework\music\fx</Filter>
+    </ClInclude>
+    <ClInclude Include="clip.h">
+      <Filter>framework\music\common</Filter>
+    </ClInclude>
+    <ClInclude Include="glass.h">
+      <Filter>current\material</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
